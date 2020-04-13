@@ -5,12 +5,14 @@ export const Nav = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: ${(props) =>
+    props.background ? '#141a20' : 'transparent'};
   position: fixed;
   z-index: 999;
   width: 100vw;
   height: 6vh;
   border-bottom: 0.5px solid black;
+  transition: background-color 1s ease 0s;
 `;
 
 export const Title = styled.h1`

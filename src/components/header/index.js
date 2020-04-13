@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Nav, Title, Icons } from './styles';
-import {
-  Facebook,
-  Linkedin,
-  Instagram,
-  Twitter,
-} from '@styled-icons/boxicons-logos';
-import { Email } from '@styled-icons/entypo/Email';
 
 const Header = () => {
+  const [navBackground, setNavBackground] = useState(false);
+  const navRef = useRef();
+  navRef.current = navBackground;
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 670;
+      if (navRef.current !== show) {
+        setNavBackground(show);
+      }
+    };
+    document.addEventListener('scroll', handleScroll);
+    return () => {
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Nav>
+    <Nav background={navBackground}>
       <Title>PAPO 10 E POESIA</Title>
       <Icons>
-        <Facebook size='16' />
-        <Linkedin size='16' />
-        <Instagram size='16' />
-        <Email size='16' />
-        <Twitter size='16' />
+        <h3>EN-US</h3>
       </Icons>
     </Nav>
   );
