@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 
 export const Gradient = styled.div`
+  display: block;
   background: linear-gradient(10deg, #2d3d46, #07131d);
   border-radius: 30px;
   margin: 1vh auto;
   width: 50%;
+
+  @media only screen and (max-width: 869px) {
+    width: 100%;
+  }
 `;
 
 export const Container = styled.section`

@@ -1,5 +1,13 @@
 import React from 'react';
-import { Container, Gradient, Technologies, Show, Title, Text } from './styles';
+import {
+  Container,
+  Gradient,
+  Technologies,
+  Show,
+  Row,
+  Title,
+  Text,
+} from './styles';
 import {
   Javascript,
   Nodejs,
@@ -34,15 +42,17 @@ const Tech = () => {
             I'm now focused on working with Javascript ecossystem, developing my
             skills in MERN Stack and libs that improve my productivity.
           </Text>
-          <Show>
-            <ReactLogo size={size} color={'#61DBFB'} style={main} />
-          </Show>
-          <Show>
-            <Javascript size={size} color={'#F0DB4F'} style={main} />
-          </Show>
-          <Show>
-            <Nodejs size={size} color={'#68A063'} style={main} />
-          </Show>
+          <Row>
+            <Show>
+              <ReactLogo size={size} color={'#61DBFB'} style={main} />
+            </Show>
+            <Show>
+              <Javascript size={size} color={'#F0DB4F'} style={main} />
+            </Show>
+            <Show>
+              <Nodejs size={size} color={'#68A063'} style={main} />
+            </Show>
+          </Row>
           <Technologies>
             <Code size={size} color={'#F5F5F5'} />
             <Html5 size={size} color={'#FF5733'} />
