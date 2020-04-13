@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Parallax } from 'react-parallax';
 
-function App() {
+import Header from './components/header';
+import Home from './components/home';
+import Techs from './components/techs';
+import KnowMore from './components/know-more';
+import Footer from './components/footer';
+import './App.css';
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Parallax
+        blur={5}
+        bgImage={require('./assets/bg/5.jpg')}
+        bgImageAlt='tech'
+        strength={200}
+      >
+        <Header />
+        <Home />
+        <Techs />
+        <KnowMore />
+        <Footer />
+      </Parallax>
     </div>
   );
-}
+};
 
 export default App;
