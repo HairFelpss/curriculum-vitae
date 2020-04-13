@@ -32,7 +32,7 @@ const Footer = () => {
           <Twitter size={size} color={'#00ACEE'} />
         </a>
       </Icons>
-      <Title>PAPO 10 E POESIA</Title>
+      <Title>VERSÃO 0.5.0</Title>
     </Container>
   );
 };
