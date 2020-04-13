@@ -6,6 +6,7 @@ export const Gradient = styled.div`
   height: 100%;
   width: 98%;
   border-radius: 30px;
+  margin-bottom: 6vh;
 `;
 
 export const Container = styled.section`

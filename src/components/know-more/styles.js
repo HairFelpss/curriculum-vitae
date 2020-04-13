@@ -10,6 +10,6 @@ export const Container = styled.section`
 `;
 
 export const Text = styled.p`
-  font-size: calc(16px + 0.4vw);
-  font-weight: 500;
+  font-size: calc(18px + 0.4vw);
+  font-weight: 600;
 `;
