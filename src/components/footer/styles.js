@@ -25,5 +25,4 @@ export const Icons = styled.span`
   justify-content: space-between;
   padding: 2vh 0;
   margin: 0 auto;
-  width: 20vw;
 `;
