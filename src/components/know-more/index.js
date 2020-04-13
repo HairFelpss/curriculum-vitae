@@ -5,8 +5,8 @@ const KnowMore = () => {
   return (
     <Container>
       <Text>
-        Do you want to know more about me? Contact me in one of my social
-        medias!
+        Do you want to know more about me? Contact me in one of my social media
+        accounts!
       </Text>
     </Container>
   );
