@@ -8,7 +8,7 @@ import {
   Name,
   Introduction,
 } from './styles';
-import profile from '../../assets/profile/eu.jp2';
+import profile from '../../assets/profile/eu.png';
 
 const Home = () => {
   return (
