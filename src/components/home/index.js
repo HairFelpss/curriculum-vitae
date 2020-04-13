@@ -20,7 +20,7 @@ const Home = () => {
             <Name>Felipe Alves de Jesus</Name>
           </Border>
           <Introduction>
-            Hey there! I'm glad to see you here! Welcome to my little Portfolio
+            Hey there! I'm glad to see you here! Welcome to my little Resume
           </Introduction>
         </Content>
       </Profile>
