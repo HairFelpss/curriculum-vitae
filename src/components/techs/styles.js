@@ -14,6 +14,7 @@ export const Container = styled.section`
   color: #f5f5f5;
   height: 40vh;
   text-align: center;
+  margin-bottom: 5vh;
 `;
 
 export const Title = styled.h1`

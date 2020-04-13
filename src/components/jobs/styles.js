@@ -18,7 +18,7 @@ export const JobLogo = styled.div`
   border-radius: ${(props) =>
     props.radius ? '0 25px 25px 0' : '25px 0 0 25px'};
   background-color: ${(props) => props.background};
-  min-width: 20%;
+  min-width: 15%;
 `;
 
 export const JobInfo = styled.div`
